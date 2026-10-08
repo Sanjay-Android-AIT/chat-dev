@@ -4,3 +4,8 @@
 .intellijPlatform
 .kotlin
 build
+
+
+# Added by cargo
+
+/target
