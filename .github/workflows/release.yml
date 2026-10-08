@@ -22,12 +22,6 @@ jobs:
             artifact_name: tiktik
             asset_name: tiktik-macos-arm64.tar.gz
 
-          # macOS Intel
-          - os: macos-13
-            target: x86_64-apple-darwin
-            artifact_name: tiktik
-            asset_name: tiktik-macos-x86_64.tar.gz
-
           # Windows 64-bit
           - os: windows-latest
             target: x86_64-pc-windows-msvc

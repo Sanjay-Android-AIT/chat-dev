@@ -17,16 +17,13 @@ curl -fsSL "${RELEASE_URL}/SHA256SUMS.txt" -o "${TEMP_DIR}/SHA256SUMS.txt" || {
 }
 
 ARM64_HASH=$(grep "tiktik-macos-arm64.tar.gz" "${TEMP_DIR}/SHA256SUMS.txt" | awk '{print $1}')
-X86_HASH=$(grep "tiktik-macos-x86_64.tar.gz" "${TEMP_DIR}/SHA256SUMS.txt" | awk '{print $1}')
 WIN_HASH=$(grep "tiktik-windows-x86_64.zip" "${TEMP_DIR}/SHA256SUMS.txt" | awk '{print $1}')
 
-echo "ARM64 SHA256:   ${ARM64_HASH}"
-echo "X86_64 SHA256:  ${X86_HASH}"
-echo "Windows SHA256: ${WIN_HASH}"
+echo "macOS ARM64 SHA256: ${ARM64_HASH}"
+echo "Windows SHA256:     ${WIN_HASH}"
 
 # Update Homebrew formula
 sed -i '' "s/PUT_ARM64_SHA256_HERE/${ARM64_HASH}/g" packaging/homebrew/Formula/tiktik.rb
-sed -i '' "s/PUT_X86_64_SHA256_HERE/${X86_HASH}/g" packaging/homebrew/Formula/tiktik.rb
 
 # Update Scoop manifest
 sed -i '' "s/PUT_WINDOWS_ZIP_SHA256_HERE/${WIN_HASH}/g" packaging/scoop/bucket/tiktik.json

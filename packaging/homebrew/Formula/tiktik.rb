@@ -4,17 +4,9 @@ class Tiktik < Formula
   version "0.1.0"
   license "MIT"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Sanjay-Android-AIT/chat-dev/releases/download/v#{version}/tiktik-macos-arm64.tar.gz"
-      # Calculate with: shasum -a 256 tiktik-macos-arm64.tar.gz
-      sha256 "PUT_ARM64_SHA256_HERE"
-    else
-      url "https://github.com/Sanjay-Android-AIT/chat-dev/releases/download/v#{version}/tiktik-macos-x86_64.tar.gz"
-      # Calculate with: shasum -a 256 tiktik-macos-x86_64.tar.gz
-      sha256 "PUT_X86_64_SHA256_HERE"
-    end
-  end
+  url "https://github.com/Sanjay-Android-AIT/chat-dev/releases/download/v#{version}/tiktik-macos-arm64.tar.gz"
+  # Calculate with: shasum -a 256 tiktik-macos-arm64.tar.gz
+  sha256 "PUT_ARM64_SHA256_HERE"
 
   def install
     bin.install "tiktik"
