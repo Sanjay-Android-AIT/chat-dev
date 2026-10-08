@@ -6,7 +6,7 @@ class Tiktik < Formula
 
   url "https://github.com/Sanjay-Android-AIT/chat-dev/releases/download/v#{version}/tiktik-macos-arm64.tar.gz"
   # Calculate with: shasum -a 256 tiktik-macos-arm64.tar.gz
-  sha256 "PUT_ARM64_SHA256_HERE"
+  sha256 "898f923ce418723ddf2f40b1ce0da2e9568ad82f231b833af6ee563d5cc77da0"
 
   def install
     bin.install "tiktik"

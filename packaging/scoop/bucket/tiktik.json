@@ -6,7 +6,7 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/Sanjay-Android-AIT/chat-dev/releases/download/v0.1.0/tiktik-windows-x86_64.zip",
-      "hash": "PUT_WINDOWS_ZIP_SHA256_HERE"
+      "hash": "d332d62c1f99582b8ecc4bf77ae0a8a2b41b91329075710903b4bfd987257601"
     }
   },
   "bin": "tiktik.exe",

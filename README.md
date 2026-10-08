@@ -12,6 +12,11 @@
 brew install Sanjay-Android-AIT/tap/tiktik
 ```
 
+### Windows (PowerShell 1-Liner — No Package Manager Needed)
+```powershell
+irm https://raw.githubusercontent.com/Sanjay-Android-AIT/chat-dev/main/install.ps1 | iex
+```
+
 ### Windows (Scoop)
 ```powershell
 scoop bucket add mytools https://github.com/Sanjay-Android-AIT/scoop-bucket
